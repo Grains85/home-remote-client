@@ -1,0 +1,74 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="HomeRemote" content="HomeRemote">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="HomeRemote">
+      <meta name="og:description" content="HomeRemote">
+      <link rel="prerender" href="remote-tv.html">
+
+      <!--<meta name="thumbnail" content="img/tumbnail.png"> -->
+      <title>HomeRemote</title>
+      <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+      <!--<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon/apple-touch-icon-57x57.png" />
+      <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon/apple-touch-icon-72x72.png" />
+      <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon/apple-touch-icon-114x114.png" />
+      <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon/apple-touch-icon-144x144.png" />
+      <link rel="icon" href="img/apple-icon/favicon.ico">
+      <script src="js/global.js"></script>
+    -->
+      <script type="text/javascript" src="js/index.js"></script>
+      <script type="text/javascript" src="js/sendIR.js"></script>
+      <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+   </head>
+   <body>
+    <div class="dot"></div>
+
+
+      <div class="main" id="main">
+        <div>
+          <img onclick="navigate('tv1')" class="icon" src="img/UE22H5615.png"/>
+          <div class="text">Kök</div>
+        </div>
+        <br><br>
+        <div>
+          <img class="icon" src="img/pioneer.png"/>
+          <div class="text">Vardagsrum</div>
+        </div>
+        <br><br>
+        <div>
+          <img class="icon" style="width:150px;" src="img/light.png"/>
+          <div class="text">Belysning</div>
+        </div>
+        <br><br>
+        <div>
+          <img class="icon" style="width:150px;" src="img/appletv.png"/>
+          <div class="text">AppleTV Kök</div>
+        </div>
+      </div>
+
+
+      <div class="tv1" id="tv1">
+        <div class="header">
+          <div class="back" onclick="navigate('main')">Startsida</div>
+          <div class="titel">TV Kök</div>
+        </div>
+        <div class="center">
+
+          <div>
+            <img onclick="sendIR('kitchen','power')" class="icon" src="img/controll/power.png"/>
+            <img class="icon" src="img/controll/play.png"/>
+            <img class="icon" src="img/controll/pause.png"/>
+            <img class="icon" src="img/controll/stop.png"/>
+            <br>
+            <img class="icon" src="img/controll/back.png"/>
+            <img class="icon" src="img/controll/forward.png"/>
+            <br>
+            <img class="icon" src="img/controll/volume_up.png"/>
+            <img class="icon" src="img/controll/volume_down.png"/>
+          </div>
+        </div>
+      </div>
+
+    </body>
+</html>

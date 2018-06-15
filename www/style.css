@@ -1,0 +1,86 @@
+html {
+  min-height: 100%;
+  background: #646469;
+  background: -moz-radial-gradient(center, ellipse cover, #646469 0%, #00000a 98%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #646469), color-stop(98%, #00000a));
+  background: -webkit-radial-gradient(center, ellipse cover, #646469 0%, #00000a 98%);
+  background: -o-radial-gradient(center, ellipse cover, #646469 0%, #00000a 98%);
+  background: -ms-radial-gradient(center, ellipse cover, #646469 0%, #00000a 98%);
+  background: radial-gradient(ellipse at center, #646469 0%, #00000a 98%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$lightgrey', endColorstr='$darkgrey',GradientType=1 );
+  background-size: cover;
+
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  font-family: "Century Gothic";
+}
+
+.dot {
+  z-index: -99;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-image: -webkit-repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) 2px, transparent 2px, transparent 2px, rgba(0, 0, 0, 0.3) 3px);
+  background-image: -moz-repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 2px, transparent 2px, rgba(0, 0, 0, 0.3) 3px);
+  background-image: -o-repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 2px, transparent 2px, rgba(0, 0, 0, 0.3) 3px);
+  background-image: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 2px, transparent 2px, rgba(0, 0, 0, 0.3) 3px);
+  -webkit-background-size: 4px 4px;
+  -moz-background-size: 4px 4px;
+  background-size: 4px 4px;
+}
+
+h2 {
+  background: rgba(50, 50, 50, 0.5);
+  padding: 20px;
+  color: #fff;
+  font-size: 2em;
+  margin: 0 auto;
+  margin-top: 90px;
+  width: 800px;
+  text-align: center;
+  box-shadow: inset 0px 0px 5px black;
+  border-radius: 10px;
+}
+
+.icon {
+  width: 200px;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text {
+    amargin-top: -10px;
+}
+.header {
+  position: fixed;
+  padding: 0px;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c4c4c4+0,8e8e8e+6,3d3d3d+41,000000+97,b7b7b7+100 */
+  background: #c4c4c4; /* Old browsers */
+  background: -moz-linear-gradient(top, #c4c4c4 0%, #8e8e8e 6%, #3d3d3d 41%, #000000 97%, #b7b7b7 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #c4c4c4 0%,#8e8e8e 6%,#3d3d3d 41%,#000000 97%,#b7b7b7 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #c4c4c4 0%,#8e8e8e 6%,#3d3d3d 41%,#000000 97%,#b7b7b7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4c4c4', endColorstr='#b7b7b7',GradientType=0 ); /* IE6-9 */
+}
+.titel {
+  margin: 20px;
+}
+.back {
+  position: absolute;
+  float: left;
+  margin: 20px;
+  
+  text-decoration: none;
+}
