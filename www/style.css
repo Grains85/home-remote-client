@@ -17,6 +17,19 @@ html {
   font-family: "Century Gothic";
 }
 
+.center {
+   margin: auto;
+   width: 50%;
+   /*border: 3px solid gray;*/
+   padding: 10px;
+}
+
+body {
+	font-family: 'Lucida Grande', 'Helvetica Neue', sans-serif;
+	font-size: 12px;
+	background: #1c1c1c;
+}
+
 .dot {
   z-index: -99;
   position: fixed;
@@ -46,7 +59,7 @@ h2 {
   border-radius: 10px;
 }
 
-.icon {
+.menu-img {
   width: 200px;
 }
 
@@ -81,6 +94,38 @@ h2 {
   position: absolute;
   float: left;
   margin: 20px;
-  
+
   text-decoration: none;
+}
+.main{
+  }
+.menu-icon {
+    float: left;
+    aheight: 300px;
+}
+
+.container {
+	atext-align: center;
+	amargin: 40px 20px;
+}
+
+.button {
+	color: #fff;
+	text-decoration: none;
+	margin-right: 10px;
+
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+
+	-webkit-box-shadow: 0 1px 0px rgba(255,255,255,0.1) inset, 0 0px 1px rgba(0,0,0,0.7);
+	-moz-box-shadow: 0 1px 0px rgba(255,255,255,0.1) inset, 0 0px 1px rgba(0,0,0,0.7);
+	box-shadow: 0 1px 0px rgba(255,255,255,0.1) inset, 0 0px 1px rgba(0,0,0,0.7);
+
+	background: rgba(0,0,0,0.5); /* #191919 */
+	border: 1px solid #141414;
+	padding: 10px 25px;
+}
+.button:active, .button:focus {
+	box-shadow: 0 0 0 transparent inset;
 }

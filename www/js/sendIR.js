@@ -17,7 +17,6 @@ function sendIR(unit, btn) {
     // cfg[0][unit].buttons[btn];
     var u = cfg[0][unit];
     var code = u.buttons[btn];
-
     alert(code);
 
     var http = new XMLHttpRequest();
