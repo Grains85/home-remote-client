@@ -150,8 +150,11 @@
   // Called from onHeadingChange
   function setColor(degree){
   //  alert(degree);
-  
-  document.getElementById("degreeDiv").innerHTML = degree;
+    document.getElementById("degreeDiv").innerHTML = degree;
+    var red = degree < 180 ? degree : 360-degree;
+    var green = 0;//degree < 180 ? degree+50 : 360-degree+50;
+    var blue = degree < 180 ? degree*0.5 : (360-degree)*0.5;
+    document.getElementById("kitchen-power").style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
   }
 
   // called on device orientation change
