@@ -60,7 +60,11 @@ h2 {
 }
 
 .menu-img {
-  width: 200px;
+  width: 100px;
+}
+.menu-icon {
+    float: left;
+    aheight: 50px;
 }
 
 .center {
@@ -96,12 +100,6 @@ h2 {
   margin: 20px;
 
   text-decoration: none;
-}
-.main{
-  }
-.menu-icon {
-    float: left;
-    aheight: 300px;
 }
 
 .container {

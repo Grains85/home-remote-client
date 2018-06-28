@@ -26,60 +26,63 @@
     <div class="dot"></div>
 
 
-      <div class="main" id="main">
+      <div id="main">
         <div class="menu-icon">
           <img onclick="navigate('tv1')" class="menu-img" src="img/UE22H5615.png"/>
           <div class="text">Kök</div>
         </div>
         <div class="menu-icon">
-          <img class="menu-img" src="img/pioneer.png"/>
+          <img onclick="navigate('receiver_kitchen')" class="menu-img" src="img/pioneer.png"/>
           <div class="text">Vardagsrum</div>
         </div>
         <div class="menu-icon">
-          <img class="menu-img" style="width:150px;" src="img/light.png"/>
+          <img class="menu-img" src="img/light.png"/>
           <div class="text">Belysning</div>
         </div>
         <div class="menu-icon">
-          <img class="menu-img" style="width:150px;" src="img/appletv.png"/>
+          <img class="menu-img" src="img/appletv.png"/>
           <div class="text">AppleTV Kök</div>
         </div>
       </div>
 
 
-      <div class="tv1" id="tv1">
+      <div id="tv1">
         <div class="header">
           <div class="back" onclick="navigate('main')">Startsida</div>
           <div class="titel">TV Kök</div>
         </div>
-
-        <div style='margin-top:80px;'/>
+        <div style='margin-top:80px;'></div>
         <!--<div class="center">-->
-              <img id='kitchen-power' style='float:left;' onclick="sendIR('kitchen','power')" width='100px' class="button" src="img/controll/power.png"/>
-              <div style='float:right;' onclick="sendIR('kitchen','power')" width='100px' class="button">SOURCE</div>
-<div class='center'>
-              <div onclick="sendIR('kitchen','power')" width='100px' class="button">UP</div>
-              <div onclick="sendIR('kitchen','power')" width='100px' class="button">DOWN</div>
-              <div onclick="sendIR('kitchen','power')" width='100px' class="button">RIGHT</div>
-              <div onclick="sendIR('kitchen','power')" width='100px' class="button">LEFT</div>
-              <div onclick="sendIR('kitchen','power')" width='100px' class="button">OK</div>
-              <div id='degreeDiv' width='100px'>?</div>
-</div>
-              <div style='position: absolute; bottom: 0;' onclick="sendIR('kitchen','power')" width='100px' class="button">VOL_DOWN</div>
-              <div style='position:absolute;bottom:0;right:0;' onclick="sendIR('kitchen','power')" width='100px' class="button">VOL_UP</div>
+        <img id='kitchen-power' style='float:left;' onclick="sendIR('kitchen','power')" width='100px' class="button" src="img/controll/power.png"/>
+        <div style='float:right;' onclick="sendIR('kitchen','power')" width='100px' class="button">SOURCE</div>
+        <div class='center'>
+          <div onclick="sendIR('kitchen','power')" width='100px' class="button">UP</div>
+          <div onclick="sendIR('kitchen','power')" width='100px' class="button">DOWN</div>
+          <div onclick="sendIR('kitchen','power')" width='100px' class="button">RIGHT</div>
+          <div onclick="sendIR('kitchen','power')" width='100px' class="button">LEFT</div>
+          <div onclick="sendIR('kitchen','power')" width='100px' class="button">OK</div>
+          <div id='degreeDiv' width='100px'>?</div>
+        </div>
+        <div style='position: absolute; bottom: 0;' onclick="sendIR('kitchen','power')" width='100px' class="button">VOL_DOWN</div>
+        <div style='position:absolute;bottom:0;right:0;' onclick="sendIR('kitchen','power')" width='100px' class="button">VOL_UP</div>
+      </div>
 
-          <!--<div>-->
-            <!--
-            <img class="menu-img" src="img/controll/play.png"/>
-            <img class="menu-img" src="img/controll/pause.png"/>
-            <img class="menu-img" src="img/controll/stop.png"/>
-            <br>
-            <img class="menu-img" src="img/controll/back.png"/>
-            <img class="menu-img" src="img/controll/forward.png"/>
-            <br>
-            <img class="menu-img" src="img/controll/volume_up.png"/>
-            <img class="menu-img" src="img/controll/volume_down.png"/>
-          -->
-          </div>
-
+      <div id="receiver_kitchen">
+        <div class="header">
+          <div class="back" onclick="navigate('main')">Startsida</div>
+          <div class="titel">Receiver kok</div>
+        </div>
+        <div style='margin-top:80px;'></div>
+        <!--<div class="center">-->
+        <img style='float:left;' onclick="sendIR('kitchen','power')" width='100px' class="button" src="img/controll/power.png"/>
+        <div style='float:right;' onclick="sendIR('kitchen','power')" width='100px' class="button">SOURCE</div>
+        <div class='center'>
+          <div onclick="sendIR('kitchen','power')" width='100px' class="button">TV SOURCE</div>
+          <div onclick="sendIR('kitchen','power')" width='100px' class="button">RADIO SOURCE</div>
+          <div width='100px'>?</div>
+        </div>
+        <div style='position: absolute; bottom: 0;' onclick="sendIR('kitchen','power')" width='100px' class="button">VOL_DOWN</div>
+        <div style='position:absolute;bottom:0;right:0;' onclick="sendIR('kitchen','power')" width='100px' class="button">VOL_UP</div>
+      </div>
     </body>
 </html>

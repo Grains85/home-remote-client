@@ -15,4 +15,5 @@ function navigate(page){
 function hideAll(){
   document.getElementById('main').style.display = "none";
   document.getElementById('tv1').style.display = "none";
+  document.getElementById('receiver_kitchen').style.display = "none";
 }

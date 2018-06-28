@@ -151,9 +151,19 @@
   function setColor(degree){
   //  alert(degree);
     document.getElementById("degreeDiv").innerHTML = degree;
-    var red = degree < 180 ? degree : 360-degree;
+
+    var maxDegree = 20;
+    var halfDegree = 20/2;
+    var currentDegree = degree%maxDegree;
+    var baseColor = 100;
+    var ratio = 4;
+
+    var upColor = baseColor+(currentDegree*ratio);
+    var downColor = baseColor+((maxDegree-currentDegree)*ratio);
+
+    var red = currentDegree < halfDegree ? upColor : downColor;
     var green = 0;//degree < 180 ? degree+50 : 360-degree+50;
-    var blue = degree < 180 ? degree*0.5 : (360-degree)*0.5;
+    var blue = 0;//degree < 180 ? degree*0.5 : (360-degree)*0.5;
     document.getElementById("kitchen-power").style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
   }
 
