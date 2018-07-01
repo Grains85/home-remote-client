@@ -158,13 +158,16 @@
     var baseColor = 100;
     var ratio = 4;
 
+
+
     var upColor = baseColor+(currentDegree*ratio);
     var downColor = baseColor+((maxDegree-currentDegree)*ratio);
 
     var red = currentDegree < halfDegree ? upColor : downColor;
     var green = 0;//degree < 180 ? degree+50 : 360-degree+50;
     var blue = 0;//degree < 180 ? degree*0.5 : (360-degree)*0.5;
-    document.getElementById("kitchen-power").style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+    //document.getElementById("kitchen-power").style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+document.body.style.backgroundColor = 'rgba(' + red + ',' + green + ',' + blue + ',0.3)';
   }
 
   // called on device orientation change

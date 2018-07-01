@@ -1,0 +1,82 @@
+[{
+    "id": "main",
+    "titel": "Home Remote",
+    "units": [{
+        "id": "kitchen_tv",
+        "display": "Kok TV"
+      },
+      {
+        "id": "kitchen_receiver",
+        "display": "Kok receiver"
+      },
+      {
+        "id": "kitchen_appleTV",
+        "display": "Kok TV"
+      },
+      {
+        "id": "light",
+        "display": "Belysning"
+      }
+    ]
+  },
+  {
+    "id": "light",
+    "titel": "Belysning",
+    "units": [{
+        "id": "a",
+        "display": "Belysning KOK"
+      },
+      {
+        "id": "b",
+        "display": "Belysning SOVRUM"
+      },
+      {
+        "id": "c",
+        "display": "Belysning VARDAGSRUM"
+      },
+      {
+        "id": "d",
+        "display": "Belysning KALLARE"
+      }
+    ]
+  },
+  {
+    "id": "kitchen_tv",
+    "titel": "TV Kök",
+    "ip": "192.168.1.41",
+    "buttons": {
+      "power": 10101,
+      "source": 10102,
+      "navigate_ok": 10103,
+      "navigate_up": 10104,
+      "navigate_down": 10105,
+      "navigate_left": 10106,
+      "navigate_right": 10107,
+      "volume_up": 1233,
+      "volume_down": 234
+    }
+  },
+  {
+    "id": "kitchen_receiver",
+    "titel": "Receiver kok",
+    "ip": "192.168.1.41",
+    "buttons": {
+      "power": 20101,
+      "source": 20102,
+      "volume_up": 2233,
+      "volume_down": 2234
+    }
+  },
+  {
+    "id": "kitchen_appleTV",
+    "titel": "Apple TV kok",
+    "ip": "192.168.1.41",
+    "buttons": {
+      "navigate_ok": 30101,
+      "navigate_up": 30102,
+      "navigate_down": 30103,
+      "navigate_left": 30104,
+      "navigate_right": 30105
+    }
+  }
+]
