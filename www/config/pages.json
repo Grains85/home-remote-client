@@ -16,6 +16,14 @@
       {
         "id": "light",
         "display": "Belysning"
+      },
+      {
+        "id": "luftvarmepump",
+        "display": "Luftvarmepump"
+      },
+      {
+        "id": "automatisera",
+        "display": "Automatisera"
       }
     ]
   },
@@ -23,20 +31,21 @@
     "id": "light",
     "titel": "Belysning",
     "units": [{
-        "id": "a",
-        "display": "Belysning KOK"
+        "id": "",
+        "display": "KOK",
+        "img": "led_strip"
       },
       {
-        "id": "b",
-        "display": "Belysning SOVRUM"
+        "id": "",
+        "display": "SOVRUM"
       },
       {
-        "id": "c",
-        "display": "Belysning VARDAGSRUM"
+        "id": "",
+        "display": "VARDAGSRUM"
       },
       {
-        "id": "d",
-        "display": "Belysning KALLARE"
+        "id": "",
+        "display": "KALLARE"
       }
     ]
   },
@@ -78,5 +87,21 @@
       "navigate_left": 30104,
       "navigate_right": 30105
     }
+  },
+  {
+      "id": "luftvarmepump",
+      "titel": "Luftvarmepump",
+      "ip": "192.168.1.41",
+      "buttons": {
+        "power": 40101
+      }
+  },
+  {
+      "id": "automatisera",
+      "titel": "Automatisera",
+      "ip": "192.168.1.41",
+      "buttons": {
+        "power": 40101
+      }
   }
 ]

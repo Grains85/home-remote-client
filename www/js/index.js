@@ -102,15 +102,24 @@ function draw() {
         //  MENU-ICON
         var iconDiv = document.createElement('div');
         iconDiv.className = "menu-icon";
-        iconDiv.addEventListener('click', function() {
-          navigate(unitId);
-        });
+
         mainDiv.appendChild(iconDiv);
 
         // IMG
         var iconImg = document.createElement('img');
         iconImg.className = "menu-img";
-        iconImg.src = "img/" + unit.id + ".png";
+        if(unitId !== ""){
+          iconImg.src = "img/" + unitId + ".png";
+          iconDiv.addEventListener('click', function() {
+            navigate(unitId);
+          });
+        }
+        else if(unit.img && unit.img !== ""){
+          iconImg.src = "img/" + unit.img + ".png";
+        }
+        else{
+          iconImg.src = "img/" + pageId + ".png";
+        }
         iconDiv.appendChild(iconImg);
 
         // TEXT
